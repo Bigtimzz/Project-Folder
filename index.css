@@ -1,0 +1,1626 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #052b4ee7;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .cta-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #d95c4f;
+  }
+
+  /* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #505050;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-info {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.cta-btn {
+  background-color: #a55339;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #854329;
+}
+
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('C:\Users\HP\Desktop\CPC\frontend\public\img\newone.jpeg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.highlight-welcome {
+  color: #e67e22; /* Orange color for "Welcome to" */
+}
+
+/* Styling for "Crownprince Properties" */
+.highlight-properties {
+  color: #3498db; /* Blue color for "Crownprince Properties" */
+}
+
+/* Paragraph Styles */
+.hero-content p {
+  font-size: 18px; /* Font size for paragraph */
+  margin-bottom: 30px; /* Space below paragraph */
+}
+
+/* CTA Button Styles */
+.cta-btn {
+  padding: 10px 20px; /* Padding for button */
+  background-color: #3498db; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button Hover Effect */
+.cta-btn:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 36px; /* Smaller font size on mobile */
+  }
+
+  .hero-content p {
+    font-size: 16px; /* Smaller paragraph font size on mobile */
+  }
+}
+
+
+  
+  body {
+    padding-top: 60px; /* Adjust based on the height of your navbar */
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  .about-text h2 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Change to desired color */
+    text-align: center; /* Center the heading */
+  }
+  .highlight-our {
+    color: #e67e22; /* Color for "About" */
+  }
+  
+  /* Styling for "Us" */
+  .highlight-services {
+    color: #3498db; /* Color for "Us" */
+  }
+  .about {
+    padding: 80px 0;
+    background-color: #f9f9f9; /* or white */
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-video {
+    flex: 1;
+    margin-right: 40px;
+    margin-top:60px;
+  }
+  
+  .about-text {
+    flex: 1.5;
+  }
+  
+  .about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .about-video video {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.8;
+  }
+  
+  .about-video video:playing {
+    opacity: 1;
+  }
+  .sound-toggle-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #a55339; /* Matching the color theme */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sound-toggle-btn:hover {
+    background-color: #82412b; /* Slightly darker shade on hover */
+  }
+  .video-with-border {
+    border: 5px solid #a55339; /* Add a solid border with the color matching the theme */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a slight shadow for a 3D effect */
+    margin-top: 40px;
+  }
+  .about-video {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Ensure the container width matches the video's width */
+    max-width: 100%;
+    overflow: hidden; /* Hide any overflow to make sure the border stays aligned */
+  }
+  
+  .video-with-border {
+    display: block; /* Ensure the video takes the full width of its container */
+    width: 100%; /* Match the width of the video to its container */
+    height: auto; /* Maintain the aspect ratio of the video */
+    border: 5px solid#f0a500; /* Solid border around the video */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional box-shadow for styling */
+  }
+  
+  
+  .sound-toggle-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:#000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sound-toggle-btn:hover {
+    background-color: #82412b;
+  }
+      
+  
+ 
+  
+  
+  .about-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .about-text p span {
+    font-weight: bold;
+    color: #0a21a3; /* Highlight color */
+  }
+  
+  
+  .services {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+  }
+  
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .testimonials {
+    padding: 50px;
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .contact {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+  }
+  
+ 
+  html {
+    scroll-behavior: smooth;
+  }
+ /* General styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #8f8f8f;
+  margin-bottom: 30px;
+}
+
+/* Scrollable Property Cards */
+.property-cards-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.property-cards {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 10px;
+  width: 100%;
+}
+
+.property-card {
+  min-width: 250px; /* Ensure a minimum width for each card */
+  margin: 0 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.property-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover img {
+  transform: scale(1.1);
+}
+
+.property-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 15px 0 5px;
+}
+
+.property-card p {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* Arrows */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #A45A2B;
+  border: 2px solid #f0a500;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.left-arrow {
+  left: -70px;
+}
+
+.right-arrow {
+  right: -70px;
+}
+
+.scroll-arrow:hover {
+  background-color:#f0a500;
+  color: #fff;
+}
+
+/* Explore button styling on hover */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.explore-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.property-card:hover .explore-overlay {
+  opacity: 1;
+}
+
+.explore-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid#f0a500;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #464646;
+  color: #fff;
+}
+.explore-heading {
+  color: #000000; /* New color for "Explore Our" */
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.explore-heading span {
+  color:#f0a500; /* Optional: different color for "Our" */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+.logo {
+  font-size: 0.9rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f0a500;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #083085;
+}
+
+.cta-btn {
+  background-color: #f0a500;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #cc8400;
+}
+.booking-rent-form {
+  background: #f5f5f5;
+  padding: 20px; /* Reduced padding for less height */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px; /* Increased width for a rectangular look */
+  margin: 40px auto;
+}
+
+.booking-rent-form h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px; /* Reduced margin to decrease height */
+  color: #333;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: -1000px; /* Reduced spacing between elements */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Reduced margin for compact height */
+  color: #555;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px; /* Reduced padding for a more compact look */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #00aaff;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 60px; /* Reduced textarea height */
+}
+
+.submit-btn {
+  background: #f0a500;
+  color: white;
+  padding: 12px; /* Reduced padding */
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Less margin for compact layout */
+}
+
+.submit-btn:hover {
+  background: #363636;
+}
+
+/* Advanced Touches */
+.form-group input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.form-group select {
+  background-image: linear-gradient(45deg, transparent 50%, #00aaff 50%),
+    linear-gradient(135deg, #00aaff 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 3px), calc(100% - 15px) calc(1em + 3px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  appearance: none;
+  padding-right: 30px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Floating Labels for Inputs */
+.form-group input:placeholder-shown + label,
+.form-group textarea:placeholder-shown + label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 16px;
+  color: #999;
+  transition: 0.2s ease all;
+}
+
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #00aaff;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #00aaff;
+}
+
+/* Custom scroll bar for textarea */
+.form-group textarea {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #00aaff #f5f5f5;
+}
+
+.form-group textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-group textarea::-webkit-scrollbar-thumb {
+  background-color: #00aaff;
+  border-radius: 10px;
+}
+
+.hero {
+  position: relative;
+}
+
+.property-logo {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  width: 300px; /* Adjust as needed */
+}
+
+.property-logo img {
+  width: 50%; /* Make the logo fit the container */
+  border-radius: 70px;
+}
+.team-section {
+  background-color: #000000;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.team-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color:#f0a500;
+}
+
+.team-header h2 span {
+  color: #ffffff;
+}
+
+.team-header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.team-member {
+  background-color: #202020;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 220px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.image-container {
+  position: relative;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-bottom: 4px solid#f0a500;
+  display: block;
+}
+
+.hover-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.image-container:hover .hover-description {
+  opacity: 1;
+}
+
+.member-info {
+  padding: 20px;
+}
+
+.member-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color:#ffffff;
+}
+
+.member-info p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.parallax-section {
+  position: relative;
+  background-image: url('C:\Users\HP\Desktop\CPC\frontend\public\img\newone8.jpg'); /* Set your image here */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-overlay {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.parallax-overlay h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.parallax-overlay p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .parallax-section {
+    height: 300px;
+  }
+
+  .parallax-overlay h2 {
+    font-size: 2rem;
+  }
+
+  .parallax-overlay p {
+    font-size: 1.2rem;
+  }
+
+  .whatsapp-button {
+    font-size: 0.9rem;
+  }
+}
+/* Footer Main Styles */
+.footer {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  display: block;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  color:#f0a500;
+  display: block;
+  margin: 0;
+  font-weight: 600;
+}
+
+.footer-phone {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #d1a58f;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+  border-top: 1px solid #f0a500;
+  display: block;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  color: #d1a58f;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #d1a58f;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-info p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Hide Back-to-Top Button initially */
+.back-to-top {
+  display: none;
+}
+
+/* Show the Back-to-Top Button when scrolling */
+.show-back-to-top {
+  display: block;
+}
+/* Social Media Icons Styles */
+.footer-social a {
+  font-size: 24px;
+  color: #0a21a3;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #616161; /* Hover color */
+}
+
+.footer-social a:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d1a58f;
+  color: #0f0f0f;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 84px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background-color: #fff;
+  color: #0f0f0f;
+}
+/* Base styling for grid */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:  #052b4ee7;
+}
+
+.blog-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.blog-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Style for "Our" text */
+.blog-heading .highlight {
+  color: #e67e22; /* Change this to any color you want for the "Our" text */
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease; /* Smooth transition for the card */
+}
+
+.blog-card.empty {
+  background-color: #000;
+  color: #fff;
+}
+
+.blog-card.empty h3 {
+  color: #fff;
+}
+
+/* Hover effect with scaling and shadow */
+.blog-card:hover {
+  transform: scale(1.05); /* Scale card slightly on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Intense shadow on hover */
+}
+
+/* Content animation */
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Fade effect */
+}
+
+.blog-card:hover .blog-content {
+  opacity: 0.9; /* Slight fade effect on hover */
+  transform: translateY(-10px); /* Moves content up on hover */
+}
+
+/* Text styles */
+.category {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  transition: color 0.3s ease;
+}
+
+.blog-card:hover h3 {
+  color: #555; /* Change heading color on hover */
+}
+
+.date {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  gap: 10px;
+}
+
+.day {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.month {
+  align-self: flex-end;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+
+  .blog-card {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  h3 {
+    font-size: 18px; /* Increase font size for better readability on mobile */
+  }
+
+  .day {
+    font-size: 28px; /* Slightly smaller date size for mobile */
+  }
+
+  .month {
+    font-size: 12px;
+  }
+}
+Base styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Services section */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff; /* White background for contrast */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.services-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Styling for "Our" */
+.highlight-our {
+  color: #e67e22; /* Color for "Our" */
+}
+
+/* Styling for "Services" */
+.highlight-services {
+  color: #083661e7; /* Color for "Services" */
+}
+
+/* Service cards layout */
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between cards */
+  flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+/* Individual card styles */
+.card {
+  background-color: #ffffff; /* Card background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Card shadow */
+  padding: 30px; /* Padding inside cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+  width: 300px; /* Fixed width for cards */
+}
+
+/* Card title styles */
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e67e22; /* Change this color as needed */
+  margin-bottom: 10px; /* Space below title */
+}
+
+/* Card description styles */
+.card-description {
+  font-size: 16px;
+  color: #666; /* Slightly lighter color for description */
+}
+
+/* Hover effects */
+.card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column; /* Stack cards on smaller screens */
+    align-items: center; /* Center the cards */
+  }
+
+  .card {
+    width: 90%; /* Full width on smaller screens */
+  }
+}
+.find-agent {
+  text-align: center;
+  padding: 50px;
+  background-image: url('C:\Users\HP\Desktop\CPC\frontend\public\img\happy.webp'); /* Use the correct path to your image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+}
+.find-agent h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.find-agent h2 .highlight-text {
+  color: #021b6e; /* Color for "Find Your" (example: bright orange) */
+}
+
+.find-agent h2 .main-text {
+  color: #f08a38; /* Color for "Agent" (default white) */
+}
+
+/* Overlay for dimming the background image */
+.find-agent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.952); /* Black overlay with 50% opacity */
+  z-index: -1;
+}
+
+
+
+.find-agent p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Tabs Styles */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.tab {
+  padding: 12px 25px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #444;
+}
+
+.tab.active {
+  background-color:#e78631;
+  color: white;
+}
+
+/* Improved Form Styles */
+.find-agent .search-form { 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.find-agent .form-group {
+  flex: 1 1 200px; /* Flexible for responsiveness */
+  max-width: 400px; /* Limit form field width */
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 15px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: red;
+}
+
+.search-btn {
+  padding: 15px 30px;
+  background-color: #e78a38;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.search-btn:hover {
+  background-color: rgb(17, 58, 148);
+  transform: scale(1.05);
+}
+
+.more-search-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .find-agent h2 {
+    font-size: 32px;
+  }
+
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab {
+    padding: 12px;
+    text-align: center;
+  }
+}
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400%;
+  max-width: 300%;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  background-color: #cebc56;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.submit-btn:hover {
+  background-color: #000000;
+}
+
+.close-btn:hover {
+  color: #ff0800;
+}
+.login-box {
+  max-width: 400px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 0;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.btn {
+  border-radius: 0;
+  font-size: 1rem;
+  padding: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.social-btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #b30000;
+}
+
+hr {
+  border: 1px solid #ddd;
+}
+
+.container {
+  background-color: #f9f9f9;
+}
+
+.spinner-border {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-width: 2px;
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.login-btn {
+  background-color: #e0ab37;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: #000000;
+}
